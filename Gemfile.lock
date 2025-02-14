@@ -287,7 +287,6 @@ GEM
       connection_pool
     redis-namespace (1.11.0)
       redis (>= 4)
-    redis-rails (0.0.0)
     regexp_parser (2.10.0)
     reline (0.6.0)
       io-console (~> 0.5)
@@ -414,9 +413,9 @@ DEPENDENCIES
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.1)
-  redis
+  redis (~> 5.3)
+  redis-client (~> 0.23)
   redis-namespace
-  redis-rails
   render_sync
   rubocop-rails-omakase
   selenium-webdriver

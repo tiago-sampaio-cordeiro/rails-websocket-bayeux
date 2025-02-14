@@ -19,7 +19,10 @@ gem "jbuilder"
 
 gem 'faye'
 
-gem 'redis'
+gem 'redis', '~> 5.3'
+
+gem 'redis-client', '~> 0.23'
+
 
 gem 'redis-namespace'
 
@@ -27,7 +30,6 @@ gem 'render_sync'
 
 gem 'faye-redis'
 
-gem 'redis-rails'
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
