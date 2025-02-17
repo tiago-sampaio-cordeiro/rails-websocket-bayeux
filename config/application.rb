@@ -1,4 +1,6 @@
 require_relative "boot"
+require 'rack'
+require 'faye'
 
 require "rails/all"
 
@@ -10,6 +12,10 @@ module RailsWebsocket
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 8.0
+
+    puts "✅ Faye Middleware carregado com sucesso!"
+    config.middleware.use Faye::RackAdapter, mount: '/faye', timeout: 25
+
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do
     # not contain `.rb` files, or that should not be reloaded or eager loaded.

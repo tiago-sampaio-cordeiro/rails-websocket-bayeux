@@ -19,6 +19,8 @@ gem "jbuilder"
 
 gem 'rack'
 
+gem 'render_sync'
+
 gem 'rackup'
 
 gem 'faye'
@@ -30,8 +32,6 @@ gem 'redis', '~> 5.3'
 gem 'redis-client', '~> 0.23'
 
 gem 'redis-namespace'
-
-gem 'render_sync'
 
 gem 'faye-redis'
 
