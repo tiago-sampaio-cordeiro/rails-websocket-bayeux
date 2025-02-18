@@ -6,8 +6,12 @@ Rails.application.configure do
   # Make code changes take effect immediately without server restart.
   config.enable_reloading = true
 
+  config.web_console.whitelisted_ips = '192.168.3.0/24'
+
   # Do not eager load code on boot.
   config.eager_load = false
+
+
 
   # Show full error reports.
   config.consider_all_requests_local = true
